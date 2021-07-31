@@ -1,4 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Rochester&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
 .icons {
     background-color: black;
     color:yellow;
@@ -19,3 +24,72 @@
     float: right;
     bottom: 50px;
 }
+.home {
+    color: white;
+
+
+}
+.one {
+    float: right;
+    position: relative;
+    left: 250px;
+    bottom: 50px;
+}
+.message {
+    position: relative;
+    left: 400px;
+    top: 150px;
+    overflow: hidden;
+    line-height: 50px;
+    font-family: 'Rochester', cursive;
+    
+}
+.btn1 {
+    background-color: yellow;
+    font-size: 20px;
+    font-family: 'Rochester', cursive;
+    padding: 10px;
+    position: relative;
+    top: 150px;
+    left: 400px;
+
+}
+.btn1 a {
+    text-decoration: none;
+}
+.btn1 a:hover {
+    color: white;
+}
+.header {
+    font-size: 2rem;
+    font-family: 'Rochester', cursive;
+    position: relative;
+    left: 500px;
+    top: 20px;
+    overflow: hidden;
+}
+.story {
+    color:black;
+    position: relative;
+    left: 600px;
+    bottom: 280px;
+    font-size: 25px;
+    font-family: 'Rochester', cursive;
+    overflow: hidden;
+
+}
+.our-story {
+    position: relative;
+    top: 400px;
+    background-color: yellow;
+    height: 300px;
+
+}
+.two {
+    position: relative;
+    left: 200px;
+    bottom: 30px;
+}
+/* * {
+    border: 3px dashed blue;
+} */

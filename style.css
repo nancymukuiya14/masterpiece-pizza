@@ -87,9 +87,15 @@ body {
 }
 .two {
     position: relative;
-    left: 200px;
     bottom: 30px;
+    margin-left: 100px;
 }
-/* * {
-    border: 3px dashed blue;
-} */
+
+.card {
+    top: 400px;
+    margin-bottom: 50px;
+    /* margin-right:100px; */
+}
+.pizza {
+    display: flex;
+}

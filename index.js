@@ -81,12 +81,12 @@ $("button.delivery").click(function () {
     $(".table").hide();
     $(".delivery").slideDown(1000);
     $("button.delivery").hide();
-    let deliveryAmount = totalCost + 200;
+    let deliveryAmount = totalCost + 150;
     console.log("You will pay sh. " + deliveryAmount + " on delivery");
     $("p#del").html("Your bill plus delivery fee is: " + deliveryAmount);
 });
 $("button.check-out").click(function () {
-    let deliveryAmount = totalCost + 200;
+    let deliveryAmount = totalCost + 150;
     console.log("Your total bills is sh. " + deliveryAmount);
 
 });

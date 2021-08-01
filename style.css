@@ -23,6 +23,7 @@ body {
     position: relative;
     float: right;
     bottom: 50px;
+    background-color: black;
 }
 .home {
     color: white;
@@ -70,7 +71,7 @@ body {
 }
 .story {
     color:black;
-    position: relative;
+    position:relative;
     left: 600px;
     bottom: 280px;
     font-size: 25px;
@@ -79,7 +80,7 @@ body {
 
 }
 .our-story {
-    position: relative;
+    position:relative;
     top: 400px;
     background-color: yellow;
     height: 300px;
@@ -91,11 +92,12 @@ body {
     margin-left: 100px;
 }
 
-.card {
+h3 {
     top: 400px;
-    margin-bottom: 50px;
-    /* margin-right:100px; */
 }
-.pizza {
-    display: flex;
+.container {
+    background-color: chocolate;
+    position: relative;
+    top: 600px;
+    
 }

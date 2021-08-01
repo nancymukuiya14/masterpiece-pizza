@@ -53,8 +53,8 @@ html{
     color: white;
   }
   .order-layout{
-    background-color:red;
-    /* background-image:url('./assets/BackG1.jpg'); */
+    background-color:yellow;
+    background-image:url('./assets/BackG1.jpg');
     background-repeat:no-repeat;
     background-size: cover;
     opacity: 0.9;

@@ -31,8 +31,8 @@ quantitySelectChange = function () {
     document.getElementById("pnumber").innerHTML = this.quantity;
     console.log(this.quantity)
 }
-$("button.order").click(function () {
-    $("button.order").hide();
+$("button.order").click(function (event) {
+    // $("button.order").hide();
     event.preventDefault();
     let customToppings = $("#toppings option:selected").val();
     let customFlavor = $("#flavor option:selected").val();
@@ -40,6 +40,7 @@ $("button.order").click(function () {
     let customSize = $("#size option:selected").val();
     let customCrust = $("#crust option:selected").val();
     let sizePrice, crustPrice, totalCost;
+    console.log(customSize)
 
     if (customSize == "Extra large") {
         sizePrice = 1500;
@@ -75,7 +76,7 @@ $("button.order").click(function () {
     $("#ptoppings").html(customToppings);
     $("#pnumber").html(quantity);
     $("#ptotal-cost").html(totalCost);
-    console.log(totalCost);
+    console.log(sizePrice);
 });
 $("button.delivery").click(function () {
     $(".table").hide();

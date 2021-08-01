@@ -5,6 +5,7 @@ html{
   }
   body{
     background-color: black;
+    font-family: 'Rochester', cursive;
   }
   nav{
     font-size: 20px;
@@ -48,17 +49,20 @@ html{
       display: flex ! important;
 
   }
+  #message {
+    color: white;
+  }
   .order-layout{
-    background-color:yellow;
-    background-image:url('./assets/BackG1.jpg');
-    background-repeat: repeat;
+    background-color:red;
+    /* background-image:url('./assets/BackG1.jpg'); */
+    background-repeat:no-repeat;
     background-size: cover;
     opacity: 0.9;
     margin-left: 5%;
     margin-right: 5%;
     padding-right: 18px;
     padding-left: 18px;
-    color: white;
+    color: black
   }
   .label {
       border-radius: 50px;
@@ -99,6 +103,10 @@ html{
   .footer{
     font-size: 20px;
     height:50px;
+    color: white; 
+    text-align: center;
+
+
   }
   #checkout{
     background-color: yellow;

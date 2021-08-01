@@ -1,5 +1,6 @@
-## Project Name is Masterpiece Pizza.
+## Masterpiece Pizza.
 ## Built and Designed by Nancy Kigotho.
+## 1/08/2021.
 ## Description.
 * This is a website where you can order a pizza.Select what flavor you want,toppings,crust, and the size that you want.
 * It also has an option of delivery to your location.

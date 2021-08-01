@@ -6,6 +6,17 @@
 ## Instructions.
 * select the size,flavor,crust and the toppings you want.
 * If you want it delivered fill in the your name,phone number and location.
+## Setup
+
+* Open Terminal {Ctrl+Alt+T}
+
+* https://github.com/nancymukuiya14/masterpiece-pizza.git
+
+* cd masterpiece-pizza
+
+* code . or atom . depending on the text editor of your choice.
+
+
 ## Technologies Used.
 * HTML.
 * CSS.

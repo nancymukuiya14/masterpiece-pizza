@@ -31,19 +31,33 @@ quantitySelectChange = function () {
     document.getElementById("pnumber").innerHTML = this.quantity;
     console.log(this.quantity)
 }
-//$("button.order").click(function (event) {
-    // $("button.order").hide();
-    $(".btn-order").on("submit", function (e) {
+totalSelectChange = function () {
+    this.price = $("#ptotal-cost").val();
+    document.getElementById("ptotal-cost").innerHTML = this.price;
+    console.log(this.price)
+}
+    $("#lets-order").on("submit", function (e) {
         //prevent default action
         e.preventDefault();
-    let customToppings = $("#toppings option:selected").val();
+    let customToppings = $("#topping option:selected").val();
     let customFlavor = $("#flavor option:selected").val();
     let quantity = $("#number").val();
     let customSize = $("#size option:selected").val();
     let customCrust = $("#crust option:selected").val();
-    console.log(customSize)
-    let sizePrice, crustPrice, totalCost;
-
+    // console.log(customToppings)
+    // let sizePrice, crustPrice,  ,totalCost;
+    if (customToppings == "pinapple") {
+        customToppings = 200
+    }
+    else if (customToppings == "pepper") {
+        customToppings = 100
+    }
+    else if (customToppings == "mushroom") {
+        customToppings = 250
+    }
+    else if (customToppings == "bacon") {
+        customToppings = 300
+    }
     if (customSize == "Extra large") {
         sizePrice = 1500;
     }
@@ -70,7 +84,7 @@ quantitySelectChange = function () {
     else {
         crustPrice = 0;
     }
-    totalCost = sizePrice + crustPrice + (customToppings.length * 50);
+    totalCost = sizePrice + crustPrice + (customToppings);
     totalCost = totalCost * quantity;
     $("#pflavor").html(customFlavor);
     $("#psize").html(customSize);
@@ -78,34 +92,23 @@ quantitySelectChange = function () {
     $("#ptoppings").html(customToppings);
     $("#pnumber").html(quantity);
     $("#ptotal-cost").html(totalCost);
-    console.log(sizePrice);
+    console.log(totalCost);
 });
-$("button.delivery").click(function () {
-    $(".table").hide();
-    $(".delivery").slideDown(1000);
-    $("button.delivery").hide();
-    let deliveryAmount = totalCost + 150;
-    console.log("You will pay sh. " + deliveryAmount + " on delivery");
-    $("p#del").html("Your bill plus delivery fee is: " + deliveryAmount);
-});
-$("button.check-out").click(function () {
-    let deliveryAmount = totalCost + 150;
-    console.log("Your total bills is sh. " + deliveryAmount);
 
-});
-$("button.check-out").click(function () {
-    event.preventDefault();
+$("#check-info").on("click", function (e) {
+    //prevent default action
+    e.preventDefault();
     let person = $("input#name").val();
     let phone = $("input#phone").val();
     let location = $("input#location").val();
-    let deliveryAmount = totalCost + 200;
+    let deliveryAmount = totalCost + 150;
     if ($("input#name").val() && $("input#phone").val() && $("input#location").val() != "") {
 
-        $("#message").append(person + ", We have recieved your order and it will be delivered to you at " + location + ". Prepare sh. " + deliveryAmount);
+        $("#message").append(person + ", We are processing your order and it will be delivered to you at " + location + ". Prepare sh. " + deliveryAmount +". It is inclusive the delivery fee and your order bill");
         $("#message").slideDown(1200);
     }
     else {
-        alert("Please fill in the details for delivery!");
+        alert("Please provide your delivery information!");
     }
 
 

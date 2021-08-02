@@ -192,7 +192,7 @@
                   <label for="number">Quantity</label>
                   <input type="number" class="form-control" id="number" placeholder="Quantity" min="1" required
                     onchange="quantitySelectChange()">
-                  <button type="order" class="btn-order">Proceed</button>
+                  <button type="submit" class="btn-order">Proceed</button>
                 </form>
               </div>
             </div>
@@ -209,7 +209,7 @@
             <th scope="col">Crust</th>
             <th scope="col">Toppings</th>
             <th scope="col">Quantity</th>
-            <th scope="col">Total</th>
+            <th scope="col"onchange=totalSelectChange()>Total</th>
           </tr>
         </thead>
         <tbody id="pizza">
@@ -227,14 +227,14 @@
       <p>Delivery Ksh.150</p>
     </div>
 
-    <button type="delivery" class="btn delivery">Delivery Information</button>
+    <button type="submit" class="btn-delivery">Delivery Information</button>
     <br><br>
 
     <div class="delivery">
       <div class="card1">
         <div class="card-header bg-white">
           <p id="del"></p>
-          <form action="" class="deliver-form">
+          <form class="deliver-form" id="del-info">
             <div class="form-group">
               <input type="text" id="name" class="form-control mb-3" placeholder="Full Name">
               <input type="text" id="phone" class="form-control mb-3" placeholder="Phone Number">
@@ -245,7 +245,7 @@
       </div>
 
     </div>
-    <button type="check-out" class="btn btn-green check-out">Check-out</button>
+    <button type="button" class="btn-check-out" id="check-info">Check-out</button>
     <p id="message"></p>
   </div>
   </div>

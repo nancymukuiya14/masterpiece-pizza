@@ -31,13 +31,17 @@ or call 0705814086.
 * Github.
 * Git.
 * web browser.
-## Github link.
-Below is a link to view the project.
+## live link.
+
+
 
 ## Known Bugs
 Thankfully i have no bugs in this project.
 
 ## Images.
+<img src="./assets/home.png">
+<img src="./assets/about.png">
+<img src="./assets/order.png">
 
 ## Licence.
 Copyright 2021 <COPYRIGHT HOLDER>

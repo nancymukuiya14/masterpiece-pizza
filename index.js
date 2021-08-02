@@ -36,9 +36,9 @@ totalSelectChange = function () {
     document.getElementById("ptotal-cost").innerHTML = this.price;
     console.log(this.price)
 }
-    $("#lets-order").on("submit", function (e) {
-        //prevent default action
-        e.preventDefault();
+$("#lets-order").on("submit", function (e) {
+    //prevent default action
+    e.preventDefault();
     let customToppings = $("#topping option:selected").val();
     let customFlavor = $("#flavor option:selected").val();
     let quantity = $("#number").val();
@@ -104,7 +104,7 @@ $("#check-info").on("click", function (e) {
     let deliveryAmount = totalCost + 150;
     if ($("input#name").val() && $("input#phone").val() && $("input#location").val() != "") {
 
-        $("#message").append(person + ", We are processing your order and it will be delivered to you at " + location + ". Prepare sh. " + deliveryAmount +". It is inclusive the delivery fee and your order bill");
+        $("#message").append(person + ", We are processing your order and it will be delivered to you at " + location + ". Prepare sh. " + deliveryAmount + ". It is inclusive the delivery fee and your order bill");
         $("#message").slideDown(1200);
     }
     else {

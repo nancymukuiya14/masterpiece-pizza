@@ -41,6 +41,7 @@ Thankfully i have no bugs in this project.
 ## Images.
 <img src="./assets/home.png">
 <img src="./assets/about.png">
+<img src="./assets/menu.png">
 <img src="./assets/order.png">
 
 ## Licence.

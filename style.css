@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Rochester&display=swap');
-
+html {
+  scroll-behavior: smooth;
+}
 body {
   background-color: black;
   font-family: 'Rochester', cursive;

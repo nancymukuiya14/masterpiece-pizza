@@ -44,8 +44,6 @@ $("#lets-order").on("submit", function (e) {
     let quantity = $("#number").val();
     let customSize = $("#size option:selected").val();
     let customCrust = $("#crust option:selected").val();
-    // console.log(customToppings)
-    // let sizePrice, crustPrice,  ,totalCost;
     if (customToppings == "pinapple") {
         customToppings = 200
     }
